@@ -147,5 +147,68 @@
 
     <p>A tag BDO não tem muita utilidade, mas é sempre bom ter em mente que é possível. Dentro da tag, no parametro dir, podemos escolher se o texto vai ser invertido da direita para a esquerda ou ao contrário, escrevendo entre os parenteses, RTL ou LTR, que significa RTL right to left, e LTR left to right. E caso você use o parametro LTR, o texto continuará igual, pois da esquerda para a direito já é a forma normal que escrevemos.</p>
 
+    <hr>
+
+    <h1>Listas</h1>
+
+    <h2>1. Listas Ordenadas:</h3>
+
+    <p>Podemos criar listas apenas usando tags no HTML. Ao invés de inumerá-las manualmente, podemos usar a tag OL, que significa Order List, e dentro dessa tag podemos usar uma outra tag chamada LI, de listas.</p>
+
+    <p>
+        <ol>
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Tomar banho</li>
+            <li>Escovar os dentes</li>
+        </ol>
+    </p>
+
+    <p>O código dela ficará desta forma no VS Code:</p>
+
+    <pre><code>
+        < ol >
+            < li >Acordar< /li>
+            < li >Tomar café< /li>
+            < li >Tomar banho< /li>
+            < li >Escovar os dentes< /li>
+        < /ol>       
+    </pre></code>
+
+    <p>Caso seja preciso, posteriormente, colocar uma tarefa no meio desta lista, basta colocar mais uma tag li na posição que deseja, e automaticamente, o HTML corrigirá a numeração da lista.</p>
+
+    <p> <strong>Importante:</strong> O fechamento da LI, no caso o <code>/li></code>, deixou de ser obrigatório. Então podemos editar a lista, sem precisar fechar a tag em cada tarefa, como foi feito acima. Neste caso, o código ficaria assim:</p>
+
+        <pre><code>
+        < ol >
+            < li >Acordar
+            < li >Tomar café
+            < li >Tomar banho
+            < li >Escovar os dentes
+        < /ol>       
+    </pre></code>
+
+<p>Bem mais limpo, né?</p>
+
+<p>Agora, se você não quiser usar numeração na lista, basta usar um parametro chamado type, dentro da tag OL. Entre aspas, você pode escolher se quer a lista <code>1, A, a, I, i</code>. O 1 é a lista numérica, A para lista alfabética com letras maiúsculas, I para lista com números romanos com letras maiúsculas, e a/i para letras minúsculas.</p>
+
+    <p>
+        <ol type="I">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Tomar banho</li>
+            <li>Escovar os dentes</li>
+        </ol>
+    </p>
+
+        <p>
+        <ol type="a">
+            <li>Acordar</li>
+            <li>Tomar café</li>
+            <li>Tomar banho</li>
+            <li>Escovar os dentes</li>
+        </ol>
+    </p>
+
 </body>
 </html>
