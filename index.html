@@ -18,41 +18,107 @@
     <hr>
 
     <h1>Entendendo Hierarquia</h1>
+
     <h2>Introdução</h2>
+
     <h3>Título da Introdução</h3>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatum, deleniti corporis dolores iusto molestias sunt facere consequatur quisquam praesentium nihil amet itaque ipsum? Temporibus fugiat sed earum deleniti aspernatur!</p>
+
     <h2>Primeiro Capitulo</h2>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nostrum expedita quod eaque, cumque id nesciunt laudantium repellendus facilis repellat minima optio deserunt at ipsam cum excepturi iste odio harum!</p>
 
     <hr>
 
     <h1>Testando negrito e itálico</h1>
+
     <h2>1. Negrito ou Destaque</h2>
+
     <p>Nesta frase, tem um termo em <b>negrito</b> usando a tag b. <!-- não semantica, ou seja, não está mais em uso como antigamente --> 
+
     <p>Existe outra forma também em <strong>destacar</strong> uma palavra ou frase, usando a tag STRONG.</p> <!-- semantica, pois tem significado para o HTML --> 
+
     <h2>2. Itálico ou Enfase</h2>
+
     <p>Nesta frase, temos um termo em <i>Itálico</i> usando a tag i.</p> <!-- não semantica --> 
+
     <p>Nesta frase, temos um termo em <em>enfase</em> usando a tag EM.</p> <!-- semantica --> 
 
     <hr>
 
     <h1>Marcadores de texto</h1>
+
         <p>Nesta frase, temos um termo marcado usando um <mark>marcador</mark> de texto com a tag mark.</p> <!--  --> 
+
     <p>Nesta frase, temos um termo marcado usando um <mark style="background-color: lime;">marcador</mark> de texto com a tag mark, porém alterando a cor do marcador para verde usando CSS.</p> <!-- aqui já estamos utilizando CSS ao usar a tag style para alterar a cor do marcado de amarelo para verde lime --> 
 
     <hr>
 
     <h1>Texto deletado e texto inserido</h1>
+
     <h2>1. Texto deletado</h2>
+
     <p>Podemos marcar um <del>texto excluído</del> para indicar que ele deve ser lido, mas não considerado, usando a tag del.</p>
+
     <h2>2. Texto inserido</h2>
+
     <p>Também podemos marcar um <ins>texto inserido</ins> para dar uma enfase e indicar que ele foi selecionado depois, usando a tag ins.</p>
     <p>Além do inserido, ainda existe o <u>texto sublinhado</u>, porém a tag u já é considerada não semantica pelo HTML.</p>
 
     <hr>
     
     <h1>Texto subescrito</h1>
+
     <p>Para inserir coisas do tipo x ao quadrado, podemos usar a tag sup, deixando uma fórmula de matemática visivelmente melhor, como x <mark style="background-color: lime;"><sup>2</sup></mark>+ 2.</p>
+
     <p>Agora, para fórmulas como H2O (água), devemos usar a tag sub para deixar o elemento que queremos na parte inferior da palavra, resultando em H <mark style="background-color: lime;"><sub>2</sub></mark>O.</p>
+
+    <hr>
+
+    <h1>Código-fonte</h1>
+
+    <p>"O comando document.getElementById('teste') é escrito em linguagem JavaScript".</p>
+
+    <p> Pode-se perceber nesta frase que o comando está um pouco confuso de ser lido porque a fonte atual não é mono espaçada, ela não reserva o mesmo espaço para todas as letras. Se quisermos consertar isso, uma das maneiras é usando a tag code:</p>
+
+    <p><strong>Não Mono Espaçada:</strong> document.getElementById('teste')</p>
+
+    <p><strong>Mono Espaçada:</strong> <code>document.getElementById('teste')</code></p>
+
+    <hr>
+
+    <h1>Manter espaços como parágrafos</h1>
+
+    <p>Se eu quisermos ter quebras de linhas em um texto ou até mesmo mostrar um comando de programação, devemos usar a tag PRE.</p>
+
+    <p><strong>Sem tag PRE:</strong></p>
+
+    <p> num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número é IMPAR')
+        print('Fim do programa')
+    </p>
+
+    <p>O código acima é um comando de linguagem Python escrito no VS Code, porém no HTML não mostra as quebras de linhas como um código de programação bem formatado.</p>
+
+    <p><strong>Com tag PRE + CODE:</strong></p>
+
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número é IMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+
+    <p>Como podemos ver acima, o código está limpo, pois foi usada a tag code para dar o mesmo espaço para todas as letras e ser mais fácil de ser lido, além da tag pre, que deixou a formatação exatamente igual como foi digitado no VS Code.</p>
+
+
 </body>
 </html>
