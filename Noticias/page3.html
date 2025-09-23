@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceira página</title>
+</head>
+<body>
+    <h1>Bem-vindo à terceira página!</h1>
+
+    <hr>
+
+    <p>Agora, se quisermos voltar para a primeira página, você deve estar pensando que é só colocar o link aqui como fizemos anteriormente, porém não é. A lógica seria colocar o link direto como index.html, mas assim como foi diferente para o link da terceira página, tambám vai ser diferente para voltarmos ao index, pois a página 3 e o index não estão na mesma pasta.</p>
+
+    <p>Devemos então ao digitar o link na tag a, antes do arquivo index.html, devemos colocar <code>../</code></p>
+
+    <p>Isso significa que estamos pedindo ao "código" para voltar uma pasta. De acordo com a lógica do LINUX, pois os nossos servidores estão guardados no LINUX.</p>
+
+    <p>O código vai ficar assim:</p>
+    <p><code>< a href="<mark>../</mark>index.html">primeira página< /a></code></p>
+
+    <hr>
+
+    <p>Voltar para a <a href="../index.html">primeira página</a>...</p>
+
+</body>
+</html>
