@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+
     <title>Mídias em HTML</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
+
 <body>
+
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender a reproduzir um áudio.</p>
+    <p>De uma forma simples, basta colocar o arquivo do áudio dentro de alguma pasta do projeto e usar a tag < audio>, colocar o caminho do áudio e depois usar o parametro CONTROLS, dessa forma, aparece um display do áudio na tela. E se você ainda quiser que o áudio comece a ser reproduzido automaticamente, basta colocar outro paramerto chamado autoplay.</p>
+
+    <p><audio src="Midia/guanacast.mp3" controls></audio></p>
+
+    <p>Há outra maneira de reproduzir áudios, principalmente se você quiser que isso aconteça sem causar nenhum problema com diferentes navegadores. Basta usar a tag < audio> novamente, e dentro usar a tag < source> colocando o caminho do arquivo, e usando < type="audio/tipodearquivo">, colocando tipos de arquivos diferentes que você conhece, como mp3, mpeg, wav... dessa forma, o navegador tenta reproduzir um tipo, não dando certo, ele continua tentando com outros tipos. Exemplo:</p>
+
+    <p>
+        <pre>
+            <code>
+                < audio>
+                    < source src="Midia/guanacast.mp3" type="audio/mpeg">
+                    < source src="Midia/guanacast.mp3" type="wav">
+                < /audio>
+            </code>
+        </pre>
+    </p>
+
+    <p>Além disso, também é uma opção disponilizar o arquivo para download caso o usuário não consiga reproduzir.</p>
+
+    <p>Se o seu navegador não reproduziu o áudio, você pode baixar o arquivo:</p>
+
+    <p>
+        <a href="Midia/guanacast.mp3" download="guanacast.mp3">
+        <i class="fas fa-download"></i> Download do Podcast
+        </a>
+    </p>
+
+    <hr>
+
     <h1>Imagem Dinâmica</h1>
+
     <p>Tente abrir esse site em varios dispositivos ou simplesmente aumente e diminua o tamanho do navegador para fazer um teste.</p>
     <p>Temos 3 imagens no código, uma imagem pequena de 300px, uma imagem média de 700px e uma imagem grande de 1000px. Aqui estamos configurando o HTML para saber quando trocar de uma imagem para outra de acordo com o tamanho do navegador. Se o navegador estiver em tela cheia, a imagem será a grande, se tiver em torno de 50% da tela, a imagem que aparecerá será a imagem média, e menor do que isto, será a imagem pequena.</p>
     <p>Isso serve para termos imagens adaptadas ao tamanho do navegador. Se estou criando um site de notícias, por exemplo, onde eu coloque fotos, ter tamanhos diferentes de imagens é uma ideia boa para não deixar o site desequilibrado visualmente para o usuário.</p>
-    <p>As tags que usamos são PICTURE, SOURCE com SRCSET para linkar a imagem e TYPE. Veja:</p>
+    <p>As tags que usamos são < picture>, < source> com SRCSET para linkar a imagem e TYPE. Veja:</p>
 
     <p>
         <pre>
@@ -31,5 +72,11 @@
         <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
         <img src="Imagens/G.png" alt="imagem flexivel">
     </picture>
+
+    <hr>
+
+
+
 </body>
+
 </html>
