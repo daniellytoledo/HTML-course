@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em varios dispositivos ou simplesmente aumente e diminua o tamanho do navegador para fazer um teste.</p>
+    <p>Temos 3 imagens no código, uma imagem pequena de 300px, uma imagem média de 700px e uma imagem grande de 1000px. Aqui estamos configurando o HTML para saber quando trocar de uma imagem para outra de acordo com o tamanho do navegador. Se o navegador estiver em tela cheia, a imagem será a grande, se tiver em torno de 50% da tela, a imagem que aparecerá será a imagem média, e menor do que isto, será a imagem pequena.</p>
+    <p>Isso serve para termos imagens adaptadas ao tamanho do navegador. Se estou criando um site de notícias, por exemplo, onde eu coloque fotos, ter tamanhos diferentes de imagens é uma ideia boa para não deixar o site desequilibrado visualmente para o usuário.</p>
+    <p>As tags que usamos são PICTURE, SOURCE com SRCSET para linkar a imagem e TYPE. Veja:</p>
+
+    <p>
+        <pre>
+            <code>
+                < picture>
+                    < source media="(max-width: 750px)" srcset="Imagens/P.png" type="image/png">
+                    < source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+                    < img src="Imagens/G.png" alt="imagem flexivel">
+                < /picture>
+            </code>
+        </pre>
+    </p>
+
+    <p>Preste muito atenção na ordem em que está sendo colocada as imagens, o recomendado é começar pela imagem pequena, seguida da média e então a grande usando img normalmente.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+        <img src="Imagens/G.png" alt="imagem flexivel">
+    </picture>
+</body>
+</html>
