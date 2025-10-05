@@ -1,8 +1,48 @@
 @charset "UTF-8";
 
 
+body {
+    background: linear-gradient(45deg, #7571b9 30%, rgba(51, 50, 122, 0.8) 70%);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.986);
+    width: 1000px;
+    margin: auto;
+    border-radius: 3%;
+    padding: 5%;
+}
+
+.title {
+    color: white;
+    background-image: linear-gradient(45deg, #1730BF 5%, #418C0B, #F2D230, #F28B30, #F22613);
+    width: 150px;
+    height: 70px;
+    align-content: center;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 1.8em;
+    box-shadow: 1px 1px 5px rgb(155, 155, 155);
+    margin: auto;
+}
 
 .circle {
     width: 50%;
 }
+
+ p {
+    text-align: justify;
+ }
+
+ h1 {
+    color: #595E91;
+ }
+
+ h2 {
+    color: #131633;
+ }
+
+ h3 {
+    color: #464752;
+ }
 
